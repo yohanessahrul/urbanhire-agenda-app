@@ -5,7 +5,7 @@ export default class UserDetail extends Component {
   render() {
     return (
       <React.Fragment>
-        <div style={{ width: "100%", background: "gray", padding: "25px", borderRadius: "5px",  }}>
+        <div style={{ width: "100%", background: "white", border: "thin solid #e0dddd", padding: "25px", borderRadius: "5px",  }}>
           <h3>Yosaru</h3>
           <p>Keep moving we will find a way</p>
           <br/>
