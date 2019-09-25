@@ -16,6 +16,14 @@ background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Fi
   font-size: 1.5em;
   color: #ffffff;
 }
+
+.image-profile-wrapper {
+  width: 100%;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+}
+
 .desc-jumbo {
   color: #366887;
   padding: 0px;
@@ -56,11 +64,33 @@ background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Fi
   left: 0;
   width: 100%;
   height: 100%;
-  background: yellow;
+  background: rgb(220, 220, 220);
   font-size: 10px;
 
 }
 
 .hideDetailDate {
    display: none;
+}
+
+.loader-wrap {
+  width: 100%;
+  height: 200px;
+  margin: 150px 0px;
+}
+
+.loader-wrap > p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.agenda-string {
+  padding-top: 10px !important;
+}
+.agenda-string-null {
+  padding-top: 30px !important;
+}
+
+.btn-detail-agenda {
+  margin-top: 5px;
 }
