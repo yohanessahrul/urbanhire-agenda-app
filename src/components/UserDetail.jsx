@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
+import AddAgendaModalForm from './AddAgendaModalForm';
 
 
 export default class UserDetail extends Component {
+  constructor (props) {
+    super (props)
+    this.state = {
+
+    }
+  }
+
+  componentDidMount () {
+  }
+
   render() {
     return (
       <React.Fragment>
         <div style={{ width: "100%", background: "white", border: "thin solid #e0dddd", padding: "25px", borderRadius: "5px",  }}>
+          <div className="image-profile-wrapper">
+            <img src="" alt="avatar"/>
+          </div>
           <h3>Yosaru</h3>
           <p>Keep moving we will find a way</p>
           <br/>
@@ -24,7 +38,10 @@ export default class UserDetail extends Component {
               <p>15 September 2019</p>
             </li>
           </ul>
-          <button className="btn btn-primary">Tambah Agenda</button>
+          <button className="btn btn-primary" data-toggle="modal" data-target="#createAgenda">
+            Tambah Agenda
+          </button>
+          <AddAgendaModalForm reload={this.props.reload}/>
         </div>
         <br/>
       </React.Fragment>
